@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- bootstrap icon -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <title>Exam</title>
+    </head>
+    <body>
+
+        <div class="menubar">
+
+            <div class="navbar">
+
+                <ul class="menu1">
+                    <li class="list1"><a href>Sleep</a></li>
+                    <li class="list1"><a href>Bathe</a></li>
+                    <li class="list1"><a href>Eat</a></li>
+                    <li class="list1"><a href>Decore</a></li>
+                    <li class="list1"><a href>Best Seller</a></li>
+                </ul>
+
+                <a href="index.html" id="logo">SNOWE</a>
+
+                <ul class="menu2">
+                    <li class="list2"><a href>Get Inspire</a></li>
+                    <li class="list2"><a href>The Magazine</a></li>
+                    <li class="list2"><a href>About</a></li>
+                    <ul class="icons">
+                        <li class="list3"><i class="bi bi-search"></i></li>
+                        <li class="list3 user"><i class="bi bi-person"></i>
+                            <ul class="drop">
+                                <li><a href="login.html">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="signup.html">Create An
+                                        Account</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#">Give $335, Get $35</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#">Registry</a></li>
+                            </ul>
+                        </li>
+                        <li class="list3"><a hrrf="#" style="position: relative;"><i class="bi bi-bag"><div class="circle">
+                            <p class="cart"></p>
+                        </div></i></a></li>
+
+                    </ul>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="box"><img src="images/p1.webp" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p2.webp" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p3.webp" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p4.webp" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p5.jpg" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p6.jpg" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p7.webp" alt>
+                    <h6>Bed</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+                <div class="box"><img src="images/p8.webp" alt>
+                    <h6>Pillow</h6>
+                    <button class="btns" onclick="addcart()">ADD TO CART</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <style>
+        /* navigation bar */
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: #3d3538;
+}
+.menu1{
+    display: flex;
+}
+.menu1 .list1{
+    padding: 0% 15px;
+    list-style: none;
+    margin-bottom: -16px;
+}
+.list1 a{
+    text-decoration: none;
+    /* color: rgb(61 53 56); */
+    color: #3d3538;
+}
+#logo{
+    font-size: 40px;
+    text-decoration: none;
+    /* color: rgb(61 53 56); */
+    color: #3d3538;
+    font-weight: 800px;
+}
+
+.d-list img{
+    height: 100px;
+    width: 100px;
+}
+.d-list h6{
+    font-size: 12px;
+}
+
+
+.menu2{
+    display: flex;
+}
+.menu2 a{
+    color: #3d3538;
+}
+.menu2 .list2{
+    padding: 0% 15px;
+    list-style: none;
+    margin-bottom: -18px;
+}
+.list2 a{
+    text-decoration: none;
+    /* color: rgb(61 53 56); */
+    color: #3d3538;
+}
+.drop{
+    list-style: none;
+    position: absolute;
+    left: -120px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: #3d3538;
+    display: none;
+}
+.drop a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #3d3538;
+}
+.user:hover .drop{
+    display: block;
+}
+
+
+.user{
+    position: relative;
+}
+
+.icons{
+    display: flex;
+}
+.icons .list3{
+    padding: 0% 15px;
+    list-style: none;
+    margin-bottom: -18px;
+    font-size: 20px;
+    color: #3d3538;
+}
+.list3 .bi-person{
+    font-size: 22px;
+}
+
+/* products */
+
+.products{
+    height: 600px;
+    width: 80%;
+    /* background-color: antiquewhite; */
+    margin: auto;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.product .box{
+    height: 250px;
+    width: 23%;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+.box img{
+    height: 160px;
+    width: 100%;
+    /* background-color: red; */
+}
+.btns{
+    margin-left: 23%;
+    padding: 10px 20px;
+    border: 1px solid grey;
+}
+.box h6{
+    text-align: center;
+}
+
+/* circle */
+.circle{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.list3 .cart{
+    font-size: 10px;
+     color: white;
+     padding-left: 4px;
+     margin-top:-1px;
+}
+
+</style>
+
+<script src="script.js"></script>
+
+    </body>
+</html>
